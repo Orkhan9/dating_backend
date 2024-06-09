@@ -1,0 +1,40 @@
+# Ignore node_modules folder (if using Node.js)
+node_modules
+
+# Ignore Python cache and virtual environments (if using Python)
+__pycache__
+*.pyc
+*.pyo
+.venv
+.venv/
+
+# Ignore environment files
+.env
+*.env
+
+# Ignore log files
+*.log
+logs
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore Docker and compose files backup
+Dockerfile~
+docker-compose.yml~
+
+# Ignore Git repository files
+.git
+.gitignore
+
+# Ignore IDE and editor configurations
+.idea
+.vscode
+*.swp
+
+# Project-specific entries
+postgres_data  # Assuming you're using a volume for PostgreSQL data
+tmp
+log
+coverage
