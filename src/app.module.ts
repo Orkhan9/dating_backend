@@ -8,6 +8,7 @@ import {
   DB_NAME,
   DB_PASSWORD,
   DB_PORT,
+  DB_SYNC,
   DB_USERNAME,
 } from './app.constants';
 
@@ -24,8 +25,8 @@ import {
         username: configService.get<string>(DB_USERNAME),
         password: configService.get<string>(DB_PASSWORD),
         database: configService.get<string>(DB_NAME),
-        autoLoadEntities: true,
-        synchronize: false,
+        entities: [__dirname + '/**/*.entity{.ts,.js}'],
+        synchronize: configService.get<boolean>(DB_SYNC),
       }),
     }),
   ],
