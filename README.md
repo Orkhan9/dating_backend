@@ -76,12 +76,12 @@ Nest is [MIT licensed](LICENSE).
 
 # dating_backend
 
-```bash generate Migrations
-$ yarn run migration:generate src/db/migrations/migration-name
-```
-
-```bash run Migrations
+```bash
+# run migrations
 $ yarn run migration:run
+
+# generate migrations
+$ yarn run migration:generate src/db/migrations/migration-name
 ```
 
 
